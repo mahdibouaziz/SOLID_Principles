@@ -1,0 +1,33 @@
+@startuml OCP
+
+class Duck {
+    +void: quack()
+	+void: swim()
+}
+
+class ElectronicDuck {
+    -boolean _on
+    +void: quack()
+	+void: swim()
+    +void: turnOn()
+	+void: turnOff()
+}
+
+class PoolDucks {
+    + void: run()
+    + void: quack()
+    + void: swim()
+    + {static} void: main()
+}
+
+class PoolElectronicDucks {
+    + void: run()
+    + void: quack()
+    + void: swim()
+    + {static} void: main()
+}
+
+PoolDucks -- Duck
+PoolElectronicDucks -- ElectronicDuck
+
+@enduml
