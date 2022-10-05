@@ -1,4 +1,4 @@
-@startuml OCP
+@startuml LSP
 
 class Duck {
     +void: quack()
