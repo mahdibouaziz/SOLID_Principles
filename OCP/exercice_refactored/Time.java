@@ -2,15 +2,15 @@ package com.directi.training.ocp.exercise;
 
 public class Time implements Slot{
 
-    private void markSlotFree(int resourceId){
+    public void markSlotFree(int resourceId){
 
     } 
 
-     private void markSlotBusy(int resourceId)
+     public void markSlotBusy(int resourceId)
     {
     }
 
-     private int findFreeSlot()
+     public int findFreeSlot()
     {
         return 0;
     }

@@ -1,0 +1,28 @@
+@startuml OCP
+
+interface Slot {
+    +void: markSlotFree()
+	+void: markSlotBusy()
+	+int: findFreeSlot()
+}
+
+class Time {
+}
+
+class Space {
+}
+
+class ResourceAllocator {
+    - {static} int: INVALID_RESOURCE_ID
+
+	+int: allocate()
+	+void: free()
+}
+
+
+ Slot <|-- Time
+ Slot <|-- Space
+
+ResourceAllocator -- Slot
+
+@enduml
